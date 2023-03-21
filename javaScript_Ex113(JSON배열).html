@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+        personList, carList, movieList, bookList
+        */
+        var carList = [
+            {model:"소나타",price:2000,fuel:13.4},
+            {model:"아반떼",price:1900,fuel:12.3},
+            {model:"투싼",price:1800,fuel:11.2},
+        ]
+        var model = prompt("모델명 입력")
+        var price = prompt("가격 입력")
+        var fuel = prompt("연비 입력")
+        price = Number(price)
+        fuel =  Number(fuel)
+        var carObj = {model:model,price:price,fuel:fuel}
+        carList.push(carObj)
+        //carList에 carObj원소를 추가하겠다.
+        // var arr = [10,20,30]
+        // arr.push(40)
+
+        // var carList = [{...},{...},{...}]
+        // carList.push({...})
+        for(var i=0; i<carList.length; i++){
+            document.write("모델명:"+carList[i].model,"<br>")
+            document.write("가격:"+carList[i].price,"<br>")
+            document.write("연비:"+carList[i].fuel,"<br><br>")
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

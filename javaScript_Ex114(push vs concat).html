@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var arr1 = [10,20,30]
+        arr1.push(40)
+        //push는 push만 부르면 원본이 바뀐다.
+        console.log(arr1)//[10,20,30,40]
+
+        var arr2 = [10,20,30]
+        var result=arr2.concat(40)
+        arr2 = result
+        console.log(arr2)//[10,20,30,40]
+        //concat은 추가된 배열이 반환된다.
+        //console.log(arr2)//[10,20,30]
+        //console.log(result)//[10,20,30,40]
+        //concatnate
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

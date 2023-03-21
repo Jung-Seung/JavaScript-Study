@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script> 
+        var num =  prompt('숫자 입력')
+        num = parseInt(num)//정수변환 함수~
+        var count = 0//약수의 갯수 저장할 변수
+        for(var i=1; i<=num; i++){
+            if(num%i==0){
+                count++
+            }
+        }
+        document.write(num+"의 약수의 갯수:"+count,"<br>")
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

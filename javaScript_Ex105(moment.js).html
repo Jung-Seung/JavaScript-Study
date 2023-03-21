@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/moment.js"></script>
+    <script> 
+        var result1=moment().format('YYYY-MM-DD hh:mm:ss');
+        document.write(result1,"<br>")
+        
+        var result2=moment().add(7,'days').format('YYYY-MM-DD')
+        document.write(result2,"<br>")//2023-01-05
+
+        var result3=moment().subtract(7,'days').format('YYYY-MM-DD')
+        document.write(result3,"<br>")//2022-12-22
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

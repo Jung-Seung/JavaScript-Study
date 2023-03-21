@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script> 
+        function start(){
+            //alert("start!")
+            setInterval(myTime,1000)
+        }
+        var time=1//타임값
+        var min=0//분
+        var sec=0//초
+        var timeFormat = ""
+        function myTime(){
+            if(time>=60){
+                min = parseInt(time/60)// 67/60 -> 1.XXX -> parseInt(1.XXX)
+                sec = time%60// 7
+                if(min < 10){
+                    min = "0"+min
+                }
+                if(sec < 10){
+                    sec = "0"+sec
+                }
+                timeFormat = min+":"+sec
+                console.log(timeFormat)
+            }else{
+                console.log(time)
+            }
+            time++
+        }
+    </script>
+</head>
+<body>
+    <button onclick="start()">시작</button>
+    <!--버튼 클릭시에 start함수 실행-->
+</body>
+</html>

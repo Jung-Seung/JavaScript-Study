@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script> 
+        // 재귀함수
+        // 다시 돌아오는~
+        // recursive - 재귀적인~
+        // recursive function - 재귀함수
+        // 재귀적 - 본래 있던곳으로 다시 돌아가거나 돌아오는것
+        // 함수 정의안에 자기 자신 호출이 있다.
+
+        function recursive(){//함수의 선언 또는 정의
+            console.log('recursive call!')
+            recursive()//자기자신 호출
+        }
+
+        recursive()//호출
+        //종료조건이 없는 재귀함수 (무한 재귀함수)
+
+        // Uncaught RangeError: Maximum call stack size exceeded
+        // 최대 호출 스택 초과~
+        // 스택공간 초과했다~ (스택 : 메모리공간~)
+        // C언어+자료구조 - 스택,힙,큐,트리~~
+        // 추상화~ (자바스크립트에 포인터가 없는게 아닌데...몰라도된다.)
+        // var num = 10,3.14,"hello"
+        // 주인님은 몰라도 됩니다. 내가 다 알아서 할테니까
+        // 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

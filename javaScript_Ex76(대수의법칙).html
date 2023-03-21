@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script> 
+        //대수의 법칙
+        //큰수의 법칙 (big num's law)
+        // 주사위 굴리면 1~6확률 1/6 = 16.6%
+        // 그럼 주사위 6번굴리면 1,2,3,4...
+        // 100만번...던지면 어떨까?
+        // 시행횟수가 늘어나면 통계적 확률에 근접한다.
+        //Math.ceil()
+        //ceiling-올림
+        var result=0
+        for(var i=1; i<=6; i++){
+            result=Math.ceil(Math.random()*6)
+            document.write(result,"<br>")
+        }
+        //0~1 : 0.000...1 ~ 0.99999...
+        //Math.random() : 0.000...1 ~ 0.99999...
+        //Math.random()*6 : 0.000...6 ~ 5.99999...
+        //Math.ceil(Math.random()*6) : 1 ~ 6
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

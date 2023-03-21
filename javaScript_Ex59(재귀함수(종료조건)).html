@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script> 
+        // 팩토리얼
+        // ! : factorial
+        // 3! : 3팩토리얼 
+        // - 서로 다른 3가지 물건 나열하는 경우의 수
+        // - 3x2x1
+        function factorial(n){//함수의 정의,선언
+            if(n==1){
+                return 1
+            }else{
+                return n*factorial(n-1)
+            }
+        }
+        var result=factorial(3)
+        //var result = 3*factorial(2)
+        //var result = 3*2*factorial(1)
+        //var result = 3*2*1
+        //var result = 6
+        document.write(result,"<br>")//6
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

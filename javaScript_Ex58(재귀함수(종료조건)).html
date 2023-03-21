@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script> 
+        function recursive(n){
+            if(n==0){//재귀함수 종료조건 걸었다.
+                return //함수 종료
+            }//return 7 - 7을 반환하면서 종료
+            console.log('recursive call!:'+n)
+            recursive(n-1)
+        }
+        recursive(3)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

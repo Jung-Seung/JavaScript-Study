@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script> 
+        /*
+            뇌가소성 : 뇌구조가 바뀐다.
+            -런던 택시기사 해마가 일반인 보다 크다.
+            -런던 택시 10년 운전하니까 뇌가 바뀐다.
+            -운동선수,프로그래머,작가
+
+            인내심은 한계가있다.
+            수학문제 풀기전에
+            무를 먹인집단, 초콜릿 먹인진단
+        */
+        /*
+            전역변수 : 함수 바깥에서 만든 변수
+            -계속 유지가 되고~
+            지역변수 : 함수 내부에서 만든 변수
+            -함수 나가면 소멸~
+        */
+        function myFunc(){
+            var num=10//지역변수
+            console.log(num)//10
+        }
+        myFunc()
+        console.log(num)//오류
+        //num is not defined - num이 정의되지 않았다.
+        //지역변수는 함수 호출시에만 사용하고
+        //호출이 종료되면 소멸되기 때문에 외부에서 사용불가능
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

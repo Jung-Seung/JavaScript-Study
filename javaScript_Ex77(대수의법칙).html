@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script> 
+        //대수의 법칙
+        var dice=[0,0,0,0,0,0,0]//횟수 배열
+                //0 1 2 3 4 5 6 - 인덱스
+        var dice_per=[0,0,0,0,0,0,0]//확률 배열
+        var result=0
+        var count = prompt("주사위 몇번?")
+        count = parseInt(count)
+        for(var i=1; i<=count; i++){
+            result=Math.ceil(Math.random()*6)
+            dice[result]++
+        }
+        for(var i=1; i<=6; i++){
+            document.write(i+"의 횟수:"+dice[i],"<br>")
+        }
+        for(var i=1; i<=6; i++){
+            dice_per[i]=(dice[i]/count)*100
+        }
+        for(var i=1; i<=6; i++){
+            document.write(i+"의 확률:"+(dice_per[i].toFixed(3))+"%","<br>")
+        }//dice_per[i].toFixed(3) - 4째자리에서 반올림해서 3째자리
+        //이거랑 비슷하게
+        //로또복권 6개 생성 : 1~45
+        //해보면 문제가...중복번호~ 33번뽑았는데 또 33번
+        //랜덤값 생성, 배열, 중복번호 제거
+
+        //주사위 100만번 던지면 16.6%
+        //보험: 암걸릴 확률
+        //60대이상~ 보험료~비싸게, 안받아준다.
+        //20대이상~ 환영 웰컴!
+        //그게 통계적~
+        //슬롯머신 조작 가능, 블랙잭~:딜러와 손님 대결
+        //딜러가 게임하는 방법에 따라,선공법~
+        //55%, 60%
+        //출구조사 5명중 1명->무조건 100%적중 
+        //범죄자...
+        //0.2%
+        //내 주변에 범죄자 없는데...
+        //내가 사회생활 하고 아는 사람이 늘어난다.
+        //내가 친구가 100명이다- 다 착한데...
+        //내가 친구가 10000명 - 2명은 범죄자...
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script> 
+       var audio = new Audio()//오디오 객체 생성
+       audio.src='./audio/my_piano1.mp3'//오디오 파일 세팅
+       function musicPlay(){
+        alert(audio.duration)//222.26초 - 3분 42초 26
+        audio.play()//재생
+       }
+       function nextMusic(){
+        alert('다음!')//배열에 음악목록이~있어야~
+        //지금 재생되는걸 멈추고~ src값을 바꾸고~ 다시 재생~
+       }
+       function prevMusic(){
+        alert('이전!')
+       }
+       function pausePlay(){
+        audio.pause()
+       }
+       function currentTimeSet(){
+            audio.currentTime=40//시작시간 40초로 변경
+       }
+       function stopMusic(){
+        audio.pause()    
+        audio.currentTime=0
+        //일시정지하고, 시간 0으로(제일 처음으로)
+       }
+       //배열에 음악목록 담고, 이전,다음 기능 되게
+       //재생 일시중지 버튼 합치기
+       //버튼 한개로 2가지 기능-토글버튼
+       //빨간색 비상버튼-눌러서 들어가면 ON-다시 눌러서 튀어나오면 OFF
+       //ON,OFF,ON,OFF
+       //G마켓 슬라이드 자동재생 버튼
+    </script>
+</head>
+<body>
+    <button onClick="musicPlay()">재생</button>
+    <button onClick="pausePlay()">일시중지</button>
+    <button onClick="currentTimeSet()">currentTime변경</button>
+    <button onClick="stopMusic()">끄기</button>
+    <button onClick="nextMusic()">다음</button>
+    <button onClick="prevMusic()">이전</button>
+</body>
+</html>

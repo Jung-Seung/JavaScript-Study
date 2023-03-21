@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.write(20+3.14,"<br>")
+        // 20 + 3.14 
+        // 정수 + 실수
+        // 피연산자의 불일치
+        // 덧셈 연산당하는 20과 3.14의 자료형이 다르다.
+        // 자료형이 다르면 연산이 안되죠
+        // 정수가 담기는 공간과
+        // 실수가 담기는 공간이 다르다.
+
+        // 정수 : 최상위 비트가 부호, 나머지는 다 수치
+        // 실수 : 최상위 비트가 부호, 나머지 위쪽,아래쪽
+        // 분리해서 소수점위,소수점 아래~ 나눈다.
+
+        // 20 + 3.14
+        // 1.정수에 통일?
+        // 그러면 3.14를 정수로 형변환
+        // 3.14 -> 3 (이렇게 되면 큰 문제!)
+
+        // 2.실수에 통일?
+        // 20 -> 20.0
+        // 정수+실수면 항상 실수가 우선시!
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

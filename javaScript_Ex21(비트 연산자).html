@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //비트 연산자
+        // & : 비트 AND
+        // | : 비트 OR
+        // ^ : 비트 XOR (exclusive or-배타적인 or)
+        // >> : 비트 오른쪽 이동
+        // << : 비트 왼쪽 이동
+        var num1 = 10
+        var result = (num1 << 1)
+        //num1의 비트를 왼쪽으로 1칸 이동
+        //해서 result 저장
+        //00000000 00000000 00000000 00001010 - 10
+        //00000000 00000000 00000000 00010100 - 20
+        //일반적으로 왼쪽으로 이동시키면 2씩 곱해지는건데
+        //넘어가면 overflow 값 초과~~
+        document.write(result)//20
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

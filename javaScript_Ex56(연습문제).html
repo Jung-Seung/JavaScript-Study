@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script> 
+        var eachSum = 0 //각단의 합
+        var totalSum = 0 //모든단의 합
+        for(var dan=2; dan<=9; dan++){
+            for(var i=1; i<=9; i++){
+                document.write(dan+"x"+i+"="+(dan*i),"<br>")
+                eachSum = eachSum + (dan*i)//eachSum += (dan*i)
+                totalSum = totalSum + (dan*i)//totalSum += (dan*i)
+            }
+            document.write(dan+"단의 합:"+eachSum,"<br><br>")
+            eachSum=0//다음 단이 쓰기 전에 초기화
+        }
+        document.write("모든 단의 합:"+totalSum,"<br>")
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

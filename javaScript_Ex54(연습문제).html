@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script> 
+        //while~
+        //약수는 그 수를 나누어 떨어지게 하는게 약수
+        //6의 약수 1,2,3,6
+        //6을 1로 나누면  몫이 6이고 나머지 0 - 6%1 == 0
+        //6을 2로 나누면  몫이 3이고 나머지 0 - 6%2 == 0
+        //6을 3로 나누면  몫이 2이고 나머지 0 - 6%3 == 0
+        //6을 4로 나누면  몫이 1이고 나머지 2 - 6%4 == 0
+        //6을 5로 나누면  몫이 1이고 나머지 1 - 6%5 == 0
+        //6을 6로 나누면  몫이 1이고 나머지 0 - 6%6 == 0
+
+        var num =  prompt('숫자 입력')
+        num = parseInt(num)//정수변환 함수~
+        var count = 0//약수의 갯수 저장할 변수
+        var i=1//1부터~
+        while(i<=num){//num까지~
+            if(num%i==0){//num을 i로 나눈 나머지가 0인가?라면
+                count++//약수의 갯수 증가
+            }
+            i++//1증가
+        }
+        document.write(num+"의 약수의 갯수:"+count,"<br>")
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

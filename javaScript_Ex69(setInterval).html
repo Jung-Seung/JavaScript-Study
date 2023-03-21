@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script> 
+        var result=null//가리키는 대상 없음
+        function start(){
+            if(result==null){
+                result=setInterval(myTime,1000)
+            }else{
+                alert("이미 실행중!")
+            }
+        }
+        function pause(){
+            clearInterval(result)
+            result=null//널값,빈값~
+            //clearInterval(1)
+        }
+        var time=1
+        function myTime(){
+            console.log(time)
+            time++
+        }
+        //버튼 여러번 클릭하면 setInterval중첩실행 문제!
+        //그래서 값이 막 증가한다!
+        //분초 변환~ 59,01:00,01:01...
+        //나누기,나머지 연산자~,변수~
+    </script>
+</head>
+<body>
+    <button onclick="start()">시작</button>
+    <button onClick="pause()">중지</button>
+    <!--버튼 클릭시에 start함수 실행-->
+</body>
+</html>

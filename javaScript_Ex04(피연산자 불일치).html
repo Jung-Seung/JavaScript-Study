@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        // 피연산자 불일치
+        // 20+30
+        // 연산자 : + , 피연산자 : 20,30
+        // 피연산자의 불일치가 생기면 
+        // 원래 연산이 제대로 수행이 안되는데
+        // 자동형변환이 발생해서 잘되는거다.
+        // "나이:"+20
+        // "나이:"+"20"
+        // "나이:20"
+        document.write("나이:"+20,"<br>")//접합
+        document.write("나이:"+"20","<br>")//접합
+        document.write("나이:20","<br>")//접합
+        //문자열 concatenate~
+        document.write(20+30,"<br>")//덧셈
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

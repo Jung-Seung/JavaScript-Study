@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // =, ==, === 
+        // = : 대입 연산자
+        // == : 관계 연산자(같은가?)
+        // === : 관계 연산자(같은가?,자료형까지 비교)
+        var num1 =  9
+        var num2 = '9'
+        var result = (num1 == num2)//같은가?
+        document.write(result,"<br>")//true
+        //true가 나오면 안될것 같은데...
+        // == : 이건 좀 위험하다...
+        // 리액트에서 == 쓰면 warning 경고
+        // 문제가 발생할 소지가 있다.
+
+        result = (num1 === num2)
+        //같은가? 자료형까지 비교한다.
+        document.write(result,"<br>")//false
+    
+        // == : equality opeartor
+        // === : strict equality operator
+        // === : 엄격하게 같은가?
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
